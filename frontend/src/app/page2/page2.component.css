@@ -1,0 +1,23 @@
+#portfolio{
+    color:white;
+    opacity: 0.8 !important
+}
+
+.flex-container {
+    /* display: flex; */
+    background-color: rgb(179, 179, 179);
+    /* background-image: url("/assets/list5.jpg") ; */
+    height : 100%; width:100%;
+  }
+
+  .content{
+      padding-top: 30px;
+  }
+
+  .header{
+      margin-top: 50px !important
+  }
+
+  .w3-top{
+    opacity : 0.3 !important
+  }

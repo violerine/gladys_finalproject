@@ -1,0 +1,18 @@
+.paragraph{
+    color:white !important
+}
+
+.project{
+    opacity: 0.6 !important
+}
+
+.w3-top{
+    opacity : 0.3 !important
+  }
+  
+  .backgroundd {
+    display: flex;
+    background-image: url("/assets/bg.jpg");
+    height: 100vh;
+    justify-content: center !important
+  }

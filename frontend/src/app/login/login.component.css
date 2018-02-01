@@ -1,0 +1,75 @@
+.w3-top{
+    opacity : 0.3 !important
+  }
+  
+
+  .backgroundd {
+    display: flex;
+    background-image: url("/assets/yumei.jpg");
+    height: 100vh;
+    justify-content: center !important
+  }
+  
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: rgb(91, 76, 175);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #000000;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding-left: 10px;
+    padding-top: 70px;
+    color: white !important
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+  }
+  
+  .input{
+    color: black !important
+  }
+  
+  .header{
+    text-align: center;
+    color:white
+  }

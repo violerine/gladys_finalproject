@@ -1,0 +1,70 @@
+<div class = "backgroundd">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#signup" routerLink="/signup" class="w3-bar-item w3-button w3-wide">SIGN UP</a>
+    <a href="#login" class="w3-bar-item w3-button w3-wide">LOGIN</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" routerLink="/about" class="w3-bar-item w3-button">ABOUT</a>
+      
+      <a href="#work" routerLink="/page2" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ART COLLECTIONS</a>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar" #mySidebar>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" routerLink="/about"  onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  
+  <a href="#work" routerLink="/page2"  onclick="w3_close()" class="w3-bar-item w3-button">ART COLLECTIONS</a>
+</nav>
+<br>
+<br>
+
+<!-----sdsds-->
+
+
+
+
+<form #f="ngForm" (ngSubmit)="Login(f)" action="/action_page.php">
+   
+  <div class="container col-xs-12 col-sm-12">
+
+      <div class="header">
+          <h1>LOG IN</h1>
+          </div>
+    <label><b>Username</b></label>
+    <input class="input" type="text" placeholder="Enter Username" name="username" required ngModel>
+    <br>
+
+    <label><b>Password</b></label>
+    <input class="input" type="password" placeholder="Enter Password" name="password" required ngModel>
+    <br>
+
+    <br>
+    <input type="checkbox" checked="checked"> Remember me
+    <br>
+  
+    <div class="clearfix">
+      <button type="button"  class="cancelbtn">Cancel</button>
+      <button  type="submit" class="signupbtn">Login</button>
+    </div>
+  </div>
+
+
+</form>
+
+
+
+</div>

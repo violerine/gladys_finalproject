@@ -1,0 +1,57 @@
+.backgroundd {
+  display: flex;
+  background-image: url("/assets/yumei.jpg");
+  height: 100vh;
+  justify-content: center !important
+}
+  
+.w3-top{
+    opacity : 0.5 !important
+  }
+  
+  .inputfile {
+       overflow: hidden; 
+    position: absolute;
+      z-index: -1 !important
+  }
+
+.Link{
+  position: relative;
+  padding-left: 50px;
+}
+
+.w3-jumbo w3-display-middle{
+  color : white !important
+}
+
+.w3-jumbo {
+  font-size: 51px!important;
+}
+
+  
+
+  
+
+  
+
+
+  /* .inputfile + label {
+    font-size: 2.25em;
+    font-weight: 700;
+    color: white;
+    opacity: 0.5;
+    display: inline-block;
+    cursor: pointer !important
+  }
+  
+  .inputfile:focus + label,
+  .inputfile + label:hover {
+      background-color: rgb(207, 207, 207) !important
+  } */
+  
+  /* .uploadhere{
+    text-align: center ;
+    size: 30px !important
+  } 
+   */
+  

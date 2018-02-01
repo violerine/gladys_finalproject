@@ -1,0 +1,73 @@
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home"  class="w3-bar-item w3-button w3-wide">HOME</a>
+    <a href="#login" routerLink="/login" class="w3-bar-item w3-button w3-wide">LOGIN</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" routerLink="/about" class="w3-bar-item w3-button">ABOUT</a>
+      
+      <a href="#work" routerLink="/page2" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ART COLLECTIONS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<div class = "backgroundd">
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar" #mySidebar>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" routerLink="/about"  onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  
+  <a href="#work" routerLink="/page2"  onclick="w3_close()" class="w3-bar-item w3-button">ART COLLECTIONS</a>
+</nav>
+<br>
+<br>
+
+<!-----sdsds-->
+
+<div>
+    
+<form #f="ngForm" (ngSubmit)="Signup(f)" action="/action_page.php">
+  <div class="container col-xs-12 col-md-12">
+      <div class="header">
+          <h1>SIGN UP</h1>
+          </div>
+   
+
+    <label><b>Username</b></label>
+    <input class="input" type="text" placeholder="Username" name="username" required ngModel>
+    <br>
+    
+
+    <label><b>Password</b></label>
+    <input class="input" type="password" placeholder="Enter Password" name="password" required ngModel>
+    <br>
+
+    <label><b>Repeat Password</b></label>
+    <input class="input" type="password" placeholder="Repeat Password" name="pswrepeat" required ngModel>
+    <br>
+
+    <input type="checkbox" name="checkbox" (change)="checkbox($event)" checked="checked"> Agree to our
+    Agree to our <a href="#">Terms & Privacy</a>.
+    <p>{{salahpass || emptyfield}} <a ></a></p>
+
+    
+    
+    <br>
+
+    <div class="clearfix">
+      <button type="button"  class="cancelbtn">Cancel</button>
+      <button type="submit"  class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</div>

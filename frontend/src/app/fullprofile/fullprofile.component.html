@@ -1,0 +1,73 @@
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home"  class="w3-bar-item w3-button w3-wide">HOME</a>
+    <a href="#login" routerLink="/login" class="w3-bar-item w3-button w3-wide">LOGIN</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" routerLink="/about" class="w3-bar-item w3-button">ABOUT</a>
+      
+      <a href="#work" routerLink="/page2" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ART COLLECTIONS</a>
+      
+      <a href="#contact" routerLink="/contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> FORUM</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<div class = "backgroundd">
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar" #mySidebar>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" routerLink="/about"  onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  
+  <a href="#work" routerLink="/page2"  onclick="w3_close()" class="w3-bar-item w3-button">ART COLLECTIONS</a>
+</nav>
+<br>
+<br>
+
+<!-----sdsds-->
+
+<div>
+    
+<form #f="ngForm" (ngSubmit)="profile(f)" action="/action_page.php">
+  <div class="container col-xs-12 col-md-12">
+      <div class="header">
+          <h1>PLEASE CREATE YOUR FULL PROFILE</h1>
+          </div>
+   
+
+    <label><b>Full Name</b></label>
+    <input class="input" type="text" placeholder="Enter Full Name" name="name" required ngModel>
+    <br>
+
+    <label><b>Address</b></label>
+    <input class="input" type="text" placeholder="Address" name="address" required ngModel>
+    <br>
+
+    <label><b>Occupation</b></label>
+    <input class="input" type="text" placeholder="What do you do?" name="occupation" required ngModel>
+    <br>
+        
+    <label><b>Interests</b></label>
+    <input class="input" type="text" placeholder="What are your hobbies?" name="interests" required ngModel>
+    <br>
+
+    <label><b>Upload your Profile Picture</b></label>
+    <input (change)="fileChange($event)" type="file" name="image" checked="checked" ngModel>
+
+    <p>-----------------------------------------------------------</p>
+    <br>
+
+    <div class="clearfix">
+      
+      <button type="submit" class="signupbtn"> Save</button>
+    </div>
+  </div>
+</form>
+</div>
